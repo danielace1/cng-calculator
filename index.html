@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNG Calculator | Sudharsan</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNG Calculator | Sudharsan</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <body class="bg-gradient-to-r from-red-500 to-orange-500">
+    <div
+      class="bg-zinc-800 mx-auto max-w-lg sm:bg-white mt-10 p-10 rounded shadow-lg"
+    >
+      <div>
+        <h1 class="font-bold text-orange-500">CNG Cost Calculator</h1>
+      </div>
 
-</head>
+      <form class="mt-5 space-y-4 text-white sm:text-black">
+        <div>
+          <label for="trip-distance" class="form-label">Trip Distance</label>
+          <input
+            type="number"
+            placeholder="Trip Distance"
+            class="form-input"
+            id="trip-distance"
+            required
+          />
+        </div>
 
-<body class="">
+        <div>
+          <label for="Fuel-efficiency" class="form-label"
+            >Fuel Efficiency</label
+          >
+          <input
+            type="number"
+            placeholder="Fuel Efficiency"
+            class="form-input"
+            id="Fuel-efficiency"
+            value="20"
+            required
+          />
+        </div>
 
-</body>
+        <div>
+          <label for="Fuel-cost" class="form-label"
+            >Fuel Cost <span class="text-red-500">*</span></label
+          >
+          <input
+            type="number"
+            placeholder="Fuel Cost"
+            class="form-input"
+            id="Fuel-cost"
+            value="101"
+            required
+          />
+        </div>
 
+        <div>
+          <button
+            class="w-full bg-red-500 px-4 py-2 text-white rounded mt-3 hover:bg-red-600"
+          >
+            Calculate
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
